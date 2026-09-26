@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Marks</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h2>Student Marks Chart</h2>
+<canvas id="marksChart"></canvas>
+<script>
+let studentNames = ["Jiya", "Rahul", "Priya", "Amit", "Neha"];
+let marks = [85, 78, 92, 70, 88];
+new Chart(document.getElementById("marksChart"), {
+type: "bar",
+SEIT2270 25SE02ML036
+53
+data: {
+labels: studentNames,
+datasets: [{
+label: "Marks",
+data: marks
+}]
+},
+options: {
+responsive: true
+}
+});
+</script>
+</body>
